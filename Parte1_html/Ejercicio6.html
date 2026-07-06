@@ -1,0 +1,56 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6 – Tablas en HTML en css  Externo</title>
+    <link rel="stylesheet" href="css/Ejercicio6.css"
+</head>
+<body>
+    <h1>Ejercicio 6 — Tablas en HTML</h1>
+    <h2>Horario semanal de clases — 2do año Base de datos</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Horas</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>08:00 - 10:00</td>
+                <td rowspan="2">Programación Web</td>
+                <td rowspan="2">Algoritmos</td>
+                <td rowspan="2">Bases de Datos</td>
+                <td rowspan="2">Matemática Discreta</td>
+                <td rowspan="2">Patrones de diseño</td>
+            </tr>
+            <tr>
+                <td>10:00 - 12:00</td>
+            </tr>
+            <tr>
+                <td>13:00 - 15:00</td>
+                <td rowspan="2">Sistemas Operativos</td>
+                <td rowspan="2">Programación Web</td>
+                <td rowspan="2">Matematicas discretas</td>
+                <td rowspan="2">Algoritmos</td>
+                <td rowspan="2">Patrones de diseño</td>
+            </tr>
+            <tr>
+                <td>15:00 - 17:00</td>
+            </tr>
+            
+        </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6">Horario vigente — 2do cuatrimestre 2026</td>
+                </tr>
+            </tfoot>
+    </table>
+</body>
+</html>

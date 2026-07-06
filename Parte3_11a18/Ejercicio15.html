@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15 - JS: Estudiantes</title>
+    <link rel="stylesheet" href="css/Ejercicio15.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Registro de Estudiantes</h2>
+    
+    <div class="form-group">
+        <label for="nombre">Nombre del estudiante:</label>
+        <input type="text" id="nombre" placeholder="Ej. Juan">
+    </div>
+    
+    <div class="form-group">
+        <label for="calificacion">Calificación:</label>
+        <input type="number" id="calificacion" placeholder="Ej. 85">
+    </div>
+    
+    <div class="buttons">
+        <button onclick="agregarEstudiante()">Agregar estudiante</button>
+        <button class="calc-btn" onclick="calcular()">Calcular</button>
+    </div>
+
+    <div id="contador" class="estudiantes-lista">Estudiantes agregados: 0</div>
+
+    <hr>
+    
+    <div class="form-group">
+        <label for="promedio">Calificación promedio:</label>
+        <input type="text" id="promedio" readonly>
+    </div>
+    
+    <div class="form-group">
+        <label for="estudianteAlto">Estudiante con la calificación más alta:</label>
+        <input type="text" id="estudianteAlto" readonly>
+    </div>
+    
+    <div class="form-group">
+        <label for="estudianteBajo">Estudiante con la calificación más baja:</label>
+        <input type="text" id="estudianteBajo" readonly>
+    </div>
+</div>
+
+<script src="js/Ejercicio15.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+   <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5 – Tablas en HTML</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-family: sans-serif;
+            min-width: 400px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+
+        th,
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #dddddd;
+        }
+
+        /* encabezados */
+        th {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        tbody tr:hover {
+            background-color: #f3f3f3;
+        }
+
+        tfoot {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        caption {
+            caption-side: bottom;
+            margin-top: 10px;
+            font-style: #888;
+            color: #666;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio 5 — Tablas en HTML</h1>
+    <h2>Horario semanal de clases — 2do año Base de datos</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Horas</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>08:00 - 12:00</td>
+                <td rowspan="1">Programación Web</td>
+                <td rowspan="1">Algoritmos</td>
+                <td rowspan="1">Bases de Datos</td>
+                <td rowspan="1">Matemática Discreta</td>
+                <td rowspan="2">Patrones de diseño</td>
+
+            </tr>
+            
+            <tr>
+                <td>13:00 - 17:00</td>
+                <td rowspan="1">Sistemas Operativos</td>
+                <td rowspan="1">Programación Web</td>
+                <td rowspan="1">Matematicas discretas</td>
+                <td rowspan="1">Algoritmos</td>
+            </tr>
+            
+            
+        </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6">Horario vigente — 2do cuatrimestre 2026</td>
+                </tr>
+            </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio10</title>
+        <link rel="stylesheet" href="css/Ejercicio10.css">
+    </head>
+    <body>
+        <form>
+            <label for="nombre_basico">Nombre:</label>
+            <input type="text" id="nombre_basico" name="nombre_basico">
+        </form>
+        <input type="text" id="tipo_texto" name="tipo_texto" placeholder="Escribe tu nombre">
+        <input type="password" id="password" name="email" placeholder="Contraseña">
+        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+        <input type="number" id="numero" name="numero"  min="0"  placeholder="Ej: 42">
+        <input type="date" id="fecha" name="fecha">
+        <input type="time" id="hora" name="hora">
+        <input type="datetime-local" id="fecha_hora" name="fecha_hora">
+        <input type="week" id="semana" name="semana">
+        <input type="month" id="mes" name="mes">
+        <input type="range" id="rango" name="rango">
+        <input type="color" id="color" name="color">
+        <input type="file" id="archivo" name="archivo">
+        <input type="hidden" id="oculto" name="oculto" value="id_secreto_123">
+
+        <input type="submit" id="enviar" name="enviar" value="Enviar Datos">
+        <input type="reset" id="reset" name="reset" value="Limpiar todo">
+        <input type="button" id="boton" name="boton" value="Boton inutil">
+        
+        <input type="text" id="attr_req" name="attr_req" placeholder="Obligatorio (required)" required>
+        <input type="text" id="attr_pat" name="attr_pat" placeholder="Solo letras (pattern)" required pattern="[A-Za-Z-z]+">
+        <input type="text" id="attr_len" name="attr_len" placeholder="3 a 10 chars (min/maxlength)" required minlength="3" maxlength="10">
+        <input type="number" id="attr_minmax" name="attr_minmax" placeholder="Rango 0 a 10 (min/max)" required min="0" max="10">
+        <input type="text" id="attr_readonly" name="attr_readonly" value="Solo lectura (readonly)" required readonly>
+        <input type="text" id="attr_disabled" name="attr_disabled" value="Desabilitado (disabled)" required disabled>
+        <input type="text" id="attr_autofocus" name="attr_autofocus" placeholder="Foco inicial (autofocus)" required autofocus>
+        <input type="text" id="attr_auto" name="attr_auto" placeholder="Autocompletado (autocomplete)" required autocomplete="on">
+        <input type="file" id="attr_mult" name="attr_mult" required multiple>
+        <form action="/submit" method="post" enctype="multipart/form-data" novalidate>
+            <label for="nombre_final">Formulario final: </label>
+            <input type="text" id="nombre_final" name="nombre_final">
+
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+
+            <input type="submit" value="Enviar POST">
+        </form>
+    </body>
+</html>
+
+
+    

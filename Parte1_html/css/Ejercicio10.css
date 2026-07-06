@@ -1,0 +1,25 @@
+body{
+    font-family: system-ui, sans-serif;
+    padding: 20px;
+    max-width: 600px;
+    }
+input{
+    display: block;
+    margin-bottom: 15px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    }
+label{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    }
+form{
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    }
